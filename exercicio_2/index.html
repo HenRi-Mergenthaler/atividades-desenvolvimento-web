@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 1 - Jogos Multiplayer</title>
+</head>
+
+<body bgcolor="#F4F6F9" text="#1A1A1A" link="#0044CC" vlink="#660099" alink="#FF0000">
+
+    <header>
+        <center>
+            <h1>Universo dos Jogos Multiplayer</h1>
+        </center>
+    </header>
+
+    
+    <nav>
+        <hr>
+            <center>
+                [ <a href="#introducao">Introdução</a> ] &nbsp;|&nbsp;
+                [ <a href="#listas">Listas e Modos</a> ] &nbsp;|&nbsp;
+                [ <a href="#estatisticas">Estatísticas (Tabelas)</a> ] &nbsp;|&nbsp;
+                [ <a href="#cadastro">Cadastro de Jogador</a> ]
+            </center>
+        <hr>
+    </nav>
+
+    <section id="introducao">
+        <h2>1. Introdução aos Jogos em Rede</h2>
+        <p>
+            Os <b>jogos multiplayer</b> revolucionaram a indústria do entretenimento digital. 
+            Diferente das experiências <i>single-player</i> convencionais, a modalidade multijogador 
+            permite a <u>cooperação e competição em tempo real</u> entre jogadores do mundo inteiro.
+        </p>
+    
+        <p>
+            Para garantir uma boa jogabilidade, aspectos como <b>latência (&lt; 50ms)</b>, 
+            <b>taxa de quadros (&gt; 60 FPS)</b> e protocolos de rede robustos s&atilde;o indispens&aacute;veis.
+        </p>
+    
+        <center>
+            <img src="https://images.unsplash.com/photo-1542751371-adc38448a05e?w=700&q=80" 
+                 alt="Jogadores em um torneio de esports" 
+                 title="Campeonato de Jogos Multiplayer" 
+                 width="550">
+            <br>
+            <i>Competição de e-Sports em arena multiplayer.</i>
+        </center>
+    
+        <!-- Vídeo sobre Jogos Multiplayer -->
+        <center>
+            <iframe width="550"
+                    height="315"
+                    src="https://www.youtube.com/embed/IKvkbiCGv2I"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    allowfullscreen></iframe>
+            <br>
+            <i>Vídeo sobre como jogos multiplayer funcionam. Do canal Game Dev Pilot</i>
+        </center>
+
+        <center>
+            <svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                <!-- Círculo: cx (centro x), cy (centro y), r (raio) -->
+                <circle cx="100" cy="100" r="80" fill="#3498db" />
+                
+                <!-- Retângulo: x, y, largura, altura -->
+                <rect x="60" y="60" width="80" height="80" fill="#ffffff" rx="16" />
+              
+                <!-- Texto -->
+                <text x="100" y="105" text-anchor="middle" fill="#333333" font-size="14" font-family="Arial">
+                  SVG Teste
+                </text>
+              </svg>              
+        </center>
+    </section>
+
+    <hr>
+
+    <section id="listas">
+        <h2>2. Categorias, Rankings e Conceitos (Listas)</h2>
+
+        <h3>A. Principais Gêneros (Lista Não-Ordenada com TYPE)</h3>
+        <ul>
+            <li type="square"><b>MMORPG:</b> Massive Multiplayer Online Role-Playing Game (ex: <i>World of Warcraft</i>)</li>
+            <li type="circle"><b>MOBA:</b> Multiplayer Online Battle Arena (ex: <i>League of Legends</i>, <i>Dota 2</i>)</li>
+            <li type="disc"><b>Battle Royale:</b> Sobrevivência em larga escala (ex: <i>Fortnite</i>, <i>Apex Legends</i>)</li>
+            <li type="square"><b>FPS Tático:</b> Tiro em primeira pessoa com objetivos táticos (ex: <i>CS2</i>, <i>Valorant</i>)</li>
+        </ul>
+
+        <h3>B. Ranking de Plataformas Populares (Lista Ordenada - Padrão e START)</h3>
+        <ol>
+            <li>Computador (PC / Steam / Epic Games)</li>
+            <li>Consoles de Mesa (PlayStation / Xbox / Nintendo Switch)</li>
+            <li>Dispositivos Móveis (Android / iOS)</li>
+        </ol>
+
+        <p><b>Continuação de categorias complementares (iniciando em 4):</b></p>
+        <ol start="4">
+            <li>Nuvem (Cloud Gaming / GeForce NOW / Xbox Cloud)</li>
+            <li>Realidade Virtual (VR Multiplayer)</li>
+        </ol>
+
+        <h3>C. Tipos de Numeração / Marcadores (OL TYPE A, a, I, i)</h3>
+
+        
+        <p><b>Etapas de uma Partida Competitiva (TYPE="A"):</b></p>
+        <ol type="A">
+            <li>Fase de Banimento e Escolha (Draft/Pick)</li>
+            <li>Fase Inicial de Posicionamento (Early Game)</li>
+            <li>Confrontos de Meio de Jogo (Mid Game)</li>
+            <li>Decisão Final e Encerramento (Late Game)</li>
+        </ol>
+
+        <p><b>Graus de Penalidade por Conduta (TYPE="I"):</b></p>
+        <ol type="I">
+            <li>Aviso em tela (Advertência)</li>
+            <li>Silenciamento temporário no chat</li>
+            <li>Suspensão temporária de filas ranqueadas</li>
+            <li>Banimento permanente da conta</li>
+        </ol>
+
+        <h3>D. Glossário Gamer (Lista de Definição - DL, DT, DD)</h3>
+        <dl>
+            <dt><b>Ping / Latência</b></dt>
+            <dd>Tempo que um pacote de dados leva para ir do computador do jogador até o servidor do jogo e retornar.</dd>
+            
+            <dt><b>Matchmaking Rating (MMR)</b></dt>
+            <dd>Algoritmo de pontuação interna utilizado para emparelhar jogadores com níveis de habilidade equivalentes.</dd>
+            
+            <dt><b>Hitbox</b></dt>
+            <dd>Geometria invisível usada nos modelos 3D para detectar colisões e acertos de projéteis em tempo real.</dd>
+        </dl>
+    </section>
+
+    <hr>
+
+    <section id="estatisticas">
+        <h2>3. Estatísticas e Infraestrutura de Servidores (Tabelas)</h2>
+
+        <p><b>Tabela 1: População de Jogadores Concorrentes por Região e Trimestre</b></p>
+        <table border="1" cellpadding="6" cellspacing="2" width="80%" bgcolor="#FFFFFF">
+            <tr bgcolor="#1B263B">
+                <th align="center"><font color="white">Região / Servidor</font></th>
+                <th align="center"><font color="white">Janeiro (k)</font></th>
+                <th align="center"><font color="white">Fevereiro (k)</font></th>
+                <th align="center"><font color="white">Março (k)</font></th>
+                <th align="center"><font color="white">Status</font></th>
+            </tr>
+            <tr align="center">
+                <td align="left">América Latina (São Paulo)</td>
+                <td>320</td>
+                <td>345</td>
+                <td>410</td>
+                <td bgcolor="#E8F8F5"><font color="#0E6251"><b>Estável</b></font></td>
+            </tr>
+            <tr align="center">
+                <td align="left">América do Norte (Virgínia)</td>
+                <td>850</td>
+                <td>890</td>
+                <td>940</td>
+                <td bgcolor="#E8F8F5"><font color="#0E6251"><b>Estável</b></font></td>
+            </tr>
+            <tr align="center">
+                <td align="left">Europa Ocidental (Frankfurt)</td>
+                <td>780</td>
+                <td>760</td>
+                <td>820</td>
+                <td bgcolor="#FEF9E7"><font color="#7D6608"><b>Manutenção</b></font></td>
+            </tr>
+        </table>
+
+        <br>
+
+        <p><b>Tabela 2: Arquitetura de Servidores e Modos (Demonstração de Colspan e Rowspan)</b></p>
+        <table border="1" cellpadding="8" cellspacing="0" width="85%" bgcolor="#FFFFFF">
+            <tr bgcolor="#2E4057">
+                <th colspan="2" align="center"><font color="#FFFFFF">Infraestrutura e Tipo de Conexão</font></th>
+                <th align="center"><font color="#FFFFFF">Capacidade Máxima</font></th>
+                <th align="center"><font color="#FFFFFF">Latência Alvo</font></th>
+                <th align="center"><font color="#FFFFFF">Segurança Anti-Cheat</font></th>
+            </tr>
+            <tr>
+                <td rowspan="2" align="center" valign="middle" bgcolor="#F2F4F7">
+                    <b>Servidores Dedicados</b>
+                </td>
+                <td align="left" valign="top">Sessão Competitiva (Tickrate 128)</td>
+                <td align="center" valign="middle">10 a 64 jogadores</td>
+                <td align="right" valign="bottom">&lt; 30 ms</td>
+                <td align="center" valign="middle">Lado do Servidor (Kernel)</td>
+            </tr>
+            <tr>
+                <td align="left" valign="top">Mundo Aberto / MMO</td>
+                <td align="center" valign="middle">Até 5.000 jogadores</td>
+                <td align="right" valign="bottom">&lt; 90 ms</td>
+                <td align="center" valign="middle">Autenticação Contínua</td>
+            </tr>
+            <tr>
+                <td colspan="2" align="left" bgcolor="#EAEDED"><b>P2P (Peer-to-Peer / Hospedagem Local)</b></td>
+                <td align="center">2 a 8 jogadores</td>
+                <td align="right">&lt; 60 ms</td>
+                <td align="center">Assinatura de Pacotes</td>
+            </tr>
+            <tr align="center">
+                <td colspan="5" bgcolor="#F8F9F9">
+                    <font size="2"><i>Relatório consolidado pela equipe de engenharia de rede.</i></font>
+                </td>
+            </tr>
+        </table>
+    </section>
+
+    <hr>
+
+    <section id="cadastro">
+        <h2>4. Formulário de Recrutamento para Clã / Beta Tester</h2>
+        <form action="#" method="POST">
+            <table border="0" cellpadding="5" cellspacing="2" width="70%">
+                
+                <!-- Nickname (Texto) -->
+                <tr>
+                    <td width="30%" align="right"><b>Nickname / Tag:</b></td>
+                    <td>
+                        <input type="text" name="nickname" size="30" maxlength="20" placeholder="Ex: ShadowStriker_BR" required>
+                    </td>
+                </tr>
+
+                <!-- Senha -->
+                <tr>
+                    <td align="right"><b>Senha de Acesso:</b></td>
+                    <td>
+                        <input type="password" name="senha" size="30" required>
+                    </td>
+                </tr>
+
+                <!-- E-mail -->
+                <tr>
+                    <td align="right"><b>E-mail para Contato:</b></td>
+                    <td>
+                        <input type="email" name="email" size="30" placeholder="jogador@exemplo.com" required>
+                    </td>
+                </tr>
+
+                <!-- Usa PC há quatnos anos (Número) -->
+                <tr>
+                    <td align="right"><b>Usa PC há quantos anos:</b></td>
+                    <td>
+                        <input type="number" name="uso_pc_anos" min="12" max="99" value="18"> anos
+                    </td>
+                </tr>
+
+                <!-- Data de Nascimento (Data) -->
+                <tr>
+                    <td align="right"><b>Data de Nascimento:</b></td>
+                    <td>
+                        <input type="date" name="data_nascimento" required> anos
+                    </td>
+                </tr>
+
+                <!-- Plataforma Principal (Radio) -->
+                <tr>
+                    <td align="right" valign="top"><b>Plataforma Principal:</b></td>
+                    <td>
+                        <input type="radio" name="plataforma" value="pc" id="plat_pc" checked>
+                        <label for="plat_pc">PC / Desktop</label><br>
+                        
+                        <input type="radio" name="plataforma" value="console" id="plat_console">
+                        <label for="plat_console">Console (PS5 / Xbox / Switch)</label><br>
+                        
+                        <input type="radio" name="plataforma" value="mobile" id="plat_mobile">
+                        <label for="plat_mobile">Mobile</label>
+                    </td>
+                </tr>
+
+                <!-- Funções Preferidas (Checkbox) -->
+                <tr>
+                    <td align="right" valign="top"><b>Funções no Time (Role):</b></td>
+                    <td>
+                        <input type="checkbox" name="funcao" value="tanque" id="fn_tank">
+                        <label for="fn_tank">Tanque / Defesa</label><br>
+                        
+                        <input type="checkbox" name="funcao" value="dps" id="fn_dps" checked>
+                        <label for="fn_dps">DPS / Atirador / Dano</label><br>
+                        
+                        <input type="checkbox" name="funcao" value="suporte" id="fn_sup">
+                        <label for="fn_sup">Suporte / Curador</label><br>
+                        
+                        <input type="checkbox" name="funcao" value="igl" id="fn_igl">
+                        <label for="fn_igl">Líder Tático (IGL)</label>
+                    </td>
+                </tr>
+
+                <!-- Nível de Habilidade / Rank (Select) -->
+                <tr>
+                    <td align="right"><b>Elo / Rank Atual:</b></td>
+                    <td>
+                        <select name="elo">
+                            <option value="bronze">Bronze / Iniciante</option>
+                            <option value="prata">Prata</option>
+                            <option value="ouro">Ouro</option>
+                            <option value="platina" selected>Platina</option>
+                            <option value="diamante">Diamante</option>
+                            <option value="mestre">Mestre / Desafiante</option>
+                        </select>
+                    </td>
+                </tr>
+
+                <!-- Envio de Comprovante / Screenshot (File) -->
+                <tr>
+                    <td align="right"><b>Screenshot do Perfil / Histórico:</b></td>
+                    <td>
+                        <input type="file" name="comprovante_rank">
+                    </td>
+                </tr>
+
+                <!-- Cor do Perfil / Tag no Discord (Color) -->
+                <tr>
+                    <td align="right"><b>Cor do Emblema do Clã:</b></td>
+                    <td>
+                        <input type="color" name="cor_emblema" value="#0055FF">
+                    </td>
+                </tr>
+
+                <!-- Quantidade de membros (Range) -->
+                <tr>
+                    <td align="right"><b>Quantidade de membros:</b></td>
+                    <td>
+                        <input type="range" name="qtdd_membros" min="0" max="50" value="10">
+                    </td>
+                </tr>
+
+                <!-- Biografia / Mensagem (Textarea) -->
+                <tr>
+                    <td align="right" valign="top"><b>Apresentação / Motivação:</b></td>
+                    <td>
+                        <textarea name="biografia" rows="4" cols="35" placeholder="Conte brevemente sobre seu histórico de jogos em equipe e horários disponíveis..."></textarea>
+                    </td>
+                </tr>
+
+                <!-- Termos e Condições (Checkbox) -->
+                <tr>
+                    <td></td>
+                    <td>
+                        <input type="checkbox" name="termos" id="chk_termos" required>
+                        <label for="chk_termos">Concordo com as regras de conduta anti-toxicidade.</label>
+                    </td>
+                </tr>
+
+                <!-- Botões de Ação -->
+                <tr>
+                    <td></td>
+                    <td>
+                        <br>
+                        <input type="submit" value="Enviar Inscrição">
+                        &nbsp;&nbsp;
+                        <input type="reset" value="Limpar Campos">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </section>
+
+    <hr>
+
+    <center>
+        <p>
+            Exercício 1 &copy; 2026 - Desenvolvimento Web - Tema: <b>Jogos Multiplayer</b>
+            <br>
+            <a href="#introducao">Voltar ao Topo da Página</a>
+        </p>
+    </center>
+    <br>
+
+</body>
+</html>
