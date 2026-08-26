@@ -9,7 +9,8 @@
             <h1>Universo dos Jogos Multiplayer</h1>
             <p>
                 [ <a href="#introducao">Introdução</a> ] &nbsp;|&nbsp;
-                [ <a href="#listas">Listas e Modos</a> ]
+                [ <a href="#listas">Listas e Modos</a> ] &nbsp;|&nbsp;
+                [ <a href="#estatisticas">Estatísticas (Tabelas)</a> ]
             </p>
         </center>
 
@@ -93,6 +94,81 @@
             <dt><b>Hitbox</b></dt>
             <dd>Geometria invisível usada nos modelos 3D para detectar colisões e acertos de projéteis em tempo real.</dd>
         </dl>
+
+        <br>
+        <hr>
+
+        <h2 id="estatisticas">3. Estatísticas e Infraestrutura de Servidores (Tabelas)</h2>
+
+        <p><b>Tabela 1: População de Jogadores Concorrentes por Região e Trimestre</b></p>
+        <table border="1" cellpadding="6" cellspacing="2" width="80%" bgcolor="#FFFFFF">
+            <tr bgcolor="#1B263B">
+                <th align="center"><font color="white">Região / Servidor</font></th>
+                <th align="center"><font color="white">Janeiro (k)</font></th>
+                <th align="center"><font color="white">Fevereiro (k)</font></th>
+                <th align="center"><font color="white">Março (k)</font></th>
+                <th align="center"><font color="white">Status</font></th>
+            </tr>
+            <tr align="center">
+                <td align="left">América Latina (São Paulo)</td>
+                <td>320</td>
+                <td>345</td>
+                <td>410</td>
+                <td bgcolor="#E8F8F5"><font color="#0E6251"><b>Estável</b></font></td>
+            </tr>
+            <tr align="center">
+                <td align="left">América do Norte (Virgínia)</td>
+                <td>850</td>
+                <td>890</td>
+                <td>940</td>
+                <td bgcolor="#E8F8F5"><font color="#0E6251"><b>Estável</b></font></td>
+            </tr>
+            <tr align="center">
+                <td align="left">Europa Ocidental (Frankfurt)</td>
+                <td>780</td>
+                <td>760</td>
+                <td>820</td>
+                <td bgcolor="#FEF9E7"><font color="#7D6608"><b>Manutenção</b></font></td>
+            </tr>
+        </table>
+
+        <br>
+
+        <p><b>Tabela 2: Arquitetura de Servidores e Modos (Demonstração de Colspan e Rowspan)</b></p>
+        <table border="1" cellpadding="8" cellspacing="0" width="85%" bgcolor="#FFFFFF">
+            <tr bgcolor="#2E4057">
+                <th colspan="2" align="center"><font color="#FFFFFF">Infraestrutura e Tipo de Conexão</font></th>
+                <th align="center"><font color="#FFFFFF">Capacidade Máxima</font></th>
+                <th align="center"><font color="#FFFFFF">Latência Alvo</font></th>
+                <th align="center"><font color="#FFFFFF">Segurança Anti-Cheat</font></th>
+            </tr>
+            <tr>
+                <td rowspan="2" align="center" valign="middle" bgcolor="#F2F4F7">
+                    <b>Servidores Dedicados</b>
+                </td>
+                <td align="left" valign="top">Sessão Competitiva (Tickrate 128)</td>
+                <td align="center" valign="middle">10 a 64 jogadores</td>
+                <td align="right" valign="bottom">&lt; 30 ms</td>
+                <td align="center" valign="middle">Lado do Servidor (Kernel)</td>
+            </tr>
+            <tr>
+                <td align="left" valign="top">Mundo Aberto / MMO</td>
+                <td align="center" valign="middle">Até 5.000 jogadores</td>
+                <td align="right" valign="bottom">&lt; 90 ms</td>
+                <td align="center" valign="middle">Autenticação Contínua</td>
+            </tr>
+            <tr>
+                <td colspan="2" align="left" bgcolor="#EAEDED"><b>P2P (Peer-to-Peer / Hospedagem Local)</b></td>
+                <td align="center">2 a 8 jogadores</td>
+                <td align="right">&lt; 60 ms</td>
+                <td align="center">Assinatura de Pacotes</td>
+            </tr>
+            <tr align="center">
+                <td colspan="5" bgcolor="#F8F9F9">
+                    <font size="2"><i>Relatório consolidado pela equipe de engenharia de rede.</i></font>
+                </td>
+            </tr>
+        </table>
 
     </body>
 </html>
