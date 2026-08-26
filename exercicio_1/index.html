@@ -10,7 +10,8 @@
             <p>
                 [ <a href="#introducao">Introdução</a> ] &nbsp;|&nbsp;
                 [ <a href="#listas">Listas e Modos</a> ] &nbsp;|&nbsp;
-                [ <a href="#estatisticas">Estatísticas (Tabelas)</a> ]
+                [ <a href="#estatisticas">Estatísticas (Tabelas)</a> ] &nbsp;|&nbsp;
+                [ <a href="#cadastro">Cadastro de Jogador</a> ]
             </p>
         </center>
 
@@ -169,6 +170,140 @@
                 </td>
             </tr>
         </table>
+
+        <br>
+        <hr>
+        
+        <h2 id="cadastro">4. Formulário de Recrutamento para Clã / Beta Tester</h2>
+
+        <form action="#" method="POST">
+            <table border="0" cellpadding="5" cellspacing="2" width="70%">
+                
+                <!-- Nickname (Texto) -->
+                <tr>
+                    <td width="30%" align="right"><b>Nickname / Tag:</b></td>
+                    <td>
+                        <input type="text" name="nickname" size="30" maxlength="20" placeholder="Ex: ShadowStriker_BR" required>
+                    </td>
+                </tr>
+
+                <!-- Senha -->
+                <tr>
+                    <td align="right"><b>Senha de Acesso:</b></td>
+                    <td>
+                        <input type="password" name="senha" size="30" required>
+                    </td>
+                </tr>
+
+                <!-- E-mail -->
+                <tr>
+                    <td align="right"><b>E-mail para Contato:</b></td>
+                    <td>
+                        <input type="email" name="email" size="30" placeholder="jogador@exemplo.com" required>
+                    </td>
+                </tr>
+
+                <!-- Idade (Número) -->
+                <tr>
+                    <td align="right"><b>Idade:</b></td>
+                    <td>
+                        <input type="number" name="idade" min="12" max="99" value="18"> anos
+                    </td>
+                </tr>
+
+                <!-- Plataforma Principal (Radio) -->
+                <tr>
+                    <td align="right" valign="top"><b>Plataforma Principal:</b></td>
+                    <td>
+                        <input type="radio" name="plataforma" value="pc" id="plat_pc" checked>
+                        <label for="plat_pc">PC / Desktop</label><br>
+                        
+                        <input type="radio" name="plataforma" value="console" id="plat_console">
+                        <label for="plat_console">Console (PS5 / Xbox / Switch)</label><br>
+                        
+                        <input type="radio" name="plataforma" value="mobile" id="plat_mobile">
+                        <label for="plat_mobile">Mobile</label>
+                    </td>
+                </tr>
+
+                <!-- Funções Preferidas (Checkbox) -->
+                <tr>
+                    <td align="right" valign="top"><b>Funções no Time (Role):</b></td>
+                    <td>
+                        <input type="checkbox" name="funcao" value="tanque" id="fn_tank">
+                        <label for="fn_tank">Tanque / Defesa</label><br>
+                        
+                        <input type="checkbox" name="funcao" value="dps" id="fn_dps" checked>
+                        <label for="fn_dps">DPS / Atirador / Dano</label><br>
+                        
+                        <input type="checkbox" name="funcao" value="suporte" id="fn_sup">
+                        <label for="fn_sup">Suporte / Curador</label><br>
+                        
+                        <input type="checkbox" name="funcao" value="igl" id="fn_igl">
+                        <label for="fn_igl">Líder Tático (IGL)</label>
+                    </td>
+                </tr>
+
+                <!-- Nível de Habilidade / Rank (Select) -->
+                <tr>
+                    <td align="right"><b>Elo / Rank Atual:</b></td>
+                    <td>
+                        <select name="elo">
+                            <option value="bronze">Bronze / Iniciante</option>
+                            <option value="prata">Prata</option>
+                            <option value="ouro">Ouro</option>
+                            <option value="platina" selected>Platina</option>
+                            <option value="diamante">Diamante</option>
+                            <option value="mestre">Mestre / Desafiante</option>
+                        </select>
+                    </td>
+                </tr>
+
+                <!-- Envio de Comprovante / Screenshot (File) -->
+                <tr>
+                    <td align="right"><b>Screenshot do Perfil / Histórico:</b></td>
+                    <td>
+                        <input type="file" name="comprovante_rank">
+                    </td>
+                </tr>
+
+                <!-- Cor do Perfil / Tag no Discord (Color) -->
+                <tr>
+                    <td align="right"><b>Cor do Emblema do Clã:</b></td>
+                    <td>
+                        <input type="color" name="cor_emblema" value="#0055FF">
+                    </td>
+                </tr>
+
+                <!-- Biografia / Mensagem (Textarea) -->
+                <tr>
+                    <td align="right" valign="top"><b>Apresentação / Motivação:</b></td>
+                    <td>
+                        <textarea name="biografia" rows="4" cols="35" placeholder="Conte brevemente sobre seu histórico de jogos em equipe e horários disponíveis..."></textarea>
+                    </td>
+                </tr>
+
+                <!-- Termos e Condições (Checkbox) -->
+                <tr>
+                    <td></td>
+                    <td>
+                        <input type="checkbox" name="termos" id="chk_termos" required>
+                        <label for="chk_termos">Concordo com as regras de conduta anti-toxicidade.</label>
+                    </td>
+                </tr>
+
+                <!-- Botões de Ação -->
+                <tr>
+                    <td></td>
+                    <td>
+                        <br>
+                        <input type="submit" value="Enviar Inscrição">
+                        &nbsp;&nbsp;
+                        <input type="reset" value="Limpar Campos">
+                    </td>
+                </tr>
+            </table>
+        </form>
 
     </body>
 </html>
