@@ -1,0 +1,5 @@
+- A partir do Tema atribuído a você desenvolver os exercícios ao longo do semestre;
+- HTML Introdução (descrita no último slide - textos variados, imagens, links, etc.);
+- Escreva algumas listas (de tipos variados) em HTML;
+- Crie algumas tabelas explorando as tags HTML vistas em aula;
+- Crie um formulário contendo campos de diversos tipos.
